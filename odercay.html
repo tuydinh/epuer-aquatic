@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>EPUer Aquatic</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<header>
+
+    <div class="left-header">
+     <div class="menu-toggle" id="menuToggle">☰</div>   
+        <div class="logo">
+            <img src="ca/logo1.png" class="logo-img">
+            <span>EPUer Aquatic</span>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <nav id="mobileMenu">
+            <a href="index.html">Trang chủ</a>
+            <a href="oderca.html">Động vật thủy sinh</a>
+            <a href="odercay.html">Cây thủy sinh</a>
+            <a href="oderphukien.html">Phụ kiện</a>
+        </nav>
+
+        <div class="user-menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="avatar-img" id="userBtn">
+            
+            <div class="dropdown-menu" id="userDropdown">
+                <div id="dynamicMenu"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- MAIN -->
+<div class="layout">
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<!-- SEARCH -->
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+<div class="search-icon">🔍</div>
+</div>
+
+<!-- CATEGORY -->
+
+<div class="category">
+
+<div class="category-header" onclick="toggleCategory()">
+<span>Danh mục cây</span>
+<span id="toggleIcon" class="toggle">+</span>
+</div>
+
+<ul class="category-list" id="categoryList">
+
+<li><a href="#duongxi">Cây Dương Xỉ</a></li>
+<li><a href="#tieuthao">Cây Tiêu Thảo</a></li>
+<li><a href="#caytrainen">Cây Trải Nền</a></li>
+<li><a href="#reu">Rêu</a></li>
+<li><a href="#ray">Ráy</a></li>
+<li><a href="#haucanh">Cây Hậu Cảnh</a></li>
+<li><a href="#catcam">Cây Cắt Cắm</a></li>
+<li><a href="#diem">Cây Điểm</a></li>
+
+
+</ul>
+
+</div>
+
+<!-- PRICE -->
+
+<div class="price-filter">
+
+<h3>Theo giá</h3>
+
+<label><input type="radio" name="price"> Giá dưới 100.000đ</label>
+<label><input type="radio" name="price"> 100.000đ - 200.000đ</label>
+<label><input type="radio" name="price"> 200.000đ - 300.000đ</label>
+<label><input type="radio" name="price"> 300.000đ - 500.000đ</label>
+<label><input type="radio" name="price"> 500.000đ - 1.000.000đ</label>
+<label><input type="radio" name="price"> 1.000.000đ - 1.500.000đ</label>
+<label><input type="radio" name="price"> 1.500.000đ - 2.000.000đ</label>
+
+</div>
+
+</div>
+<div class="main">
+
+<div class="banner">
+    <video autoplay muted loop playsinline>
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="title" id="duongxi">Cây Dương Xỉ</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay1.jpg">
+<h4>Dương Xỉ Mỹ Nhân</h4>
+<div class="price">65.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Dương Xỉ Mỹ Nhân" data-price="65000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay2.jpg">
+<h4>Dương Xỉ Châu Phi</h4>
+<div class="price">75.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Dương Xỉ Châu Phi" data-price="75000">
+Thêm vào giỏ
+</button>
+</div>
+
+</div>
+<div class="title" id="tieuthao">Cây Tiêu Thảo</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay3.jpg">
+<h4>Tiêu Thảo Xanh</h4>
+<div class="price">30.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Tiêu Thảo Xanh" data-price="30000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay4.jpg">
+<h4>Tiêu Thảo Lucen</h4>
+<div class="price">45.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Tiêu Thảo Lucen" data-price="45000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay5.jpg">
+<h4>Tiêu Thảo Tím</h4>
+<div class="price">40.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Tiêu Thảo Tím" data-price="40000">
+Thêm vào giỏ
+</button>
+</div>
+
+</div>
+<div class="title" id="caytrainen">Cây Trải Nền</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay6.jpg">
+<h4>Cỏ Thìa</h4>
+<div class="price">45.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Cỏ Thìa" data-price="45000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay7.jpg">
+<h4>Rau Má Hương</h4>
+<div class="price">35.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Rau Má Hương" data-price="35000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay8.jpg">
+<h4>Trân Châu Ngọc Trai</h4>
+<div class="price">55.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Trân Châu Ngọc Trai" data-price="55000">
+Thêm vào giỏ
+</button>
+</div>
+
+</div>
+<div class="title" id="reu">Cây Rêu</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay9.jpg">
+<h4>Rêu Weeping</h4>
+<div class="price">55.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Rêu Weeping" data-price="55000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay10.jpg">
+<h4>Rêu Flame</h4>
+<div class="price">55.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Rêu Flame" data-price="55000">
+Thêm vào giỏ
+</button>
+</div>
+
+<div class="product">
+<img src="cay/cay11.jpg">
+<h4>Rêu Minitaiwan</h4>
+<div class="price">55.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Rêu Minitaiwan" data-price="55000">
+Thêm vào giỏ
+</button>
+</div>
+
+</div>
+<div class="title" id="ray">Cây Ráy</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay12.jpg">
+<h4>Ráy Nana Tàu</h4>
+<div class="price">35.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Ráy Nana Tàu" data-price="35000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay13.jpg">
+<h4>Ráy Lá Tròn</h4>
+<div class="price">45.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Ráy Lá Tròn" data-price="45000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay14.jpg">
+<h4>Ráy APC</h4>
+<div class="price">70.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Ráy APC" data-price="70000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay15.jpg">
+<h4>Bucep đỏ</h4>
+<div class="price">130.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Bucep đỏ" data-price="130000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay16.jpg">
+<h4>Bucep Catherine</h4>
+<div class="price">80.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Bucep Catherine" data-price="80000">Thêm vào giỏ</button>
+</div>
+
+</div>
+<div class="title" id="haucanh">Cây Hậu Cảnh</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay17.jpg">
+<h4>Hẹ Thẳng</h4>
+<div class="price">25.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Hẹ Thẳng" data-price="25000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay18.jpg">
+<h4>Cỏ Cọp</h4>
+<div class="price">25.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Cỏ Cọp" data-price="25000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay20.jpg">
+<h4>Tiểu Bảo Tháp</h4>
+<div class="price">10.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Tiểu Bảo Tháp" data-price="10000">Thêm vào giỏ</button>
+</div>
+
+</div>
+<div class="title" id="catcam">Cây Cắt Cắm</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay19.jpg">
+<h4>Vảy Ốc Siêu Đỏ</h4>
+<div class="price">10.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Vảy Ốc Siêu Đỏ" data-price="10000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay20.jpg">
+<h4>Tiểu Bảo Tháp</h4>
+<div class="price">10.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Tiểu Bảo Tháp" data-price="10000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay21.jpg">
+<h4>Thủy Cúc</h4>
+<div class="price">10.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Thủy Cúc" data-price="10000">Thêm vào giỏ</button>
+</div>
+
+</div>
+<div class="title" id="diem">Cây Điểm</div>
+
+<div class="products">
+
+<div class="product">
+<img src="cay/cay22.jpg">
+<h4>Mị Nương</h4>
+<div class="price">120.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Mị Nương" data-price="120000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay23.jpg">
+<h4>Sen Tiger</h4>
+<div class="price">45.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Sen Tiger" data-price="45000">Thêm vào giỏ</button>
+</div>
+
+<div class="product">
+<img src="cay/cay24.jpg">
+<h4>Trầu Ozelot</h4>
+<div class="price">40.000đ</div>
+
+<div class="quantity-box">
+<button class="qty-btn minus">-</button>
+<span class="qty-number">1</span>
+<button class="qty-btn plus">+</button>
+</div>
+
+<button class="add-cart-btn" data-name="Trầu Ozelot" data-price="40000">Thêm vào giỏ</button>
+</div>
+
+</div>
+</div>
+</div>
+<!-- ================= GIỎ HÀNG ================= -->
+
+<div class="cart-btn" id="cartBtn">
+🛒
+</div>
+
+<!-- ================= BOX THANH TOÁN ================= -->
+
+<div class="checkout-box" id="checkoutBox">
+
+    <div class="checkout-left">
+
+        <h1 class="title">🐟 Thanh Toán</h1>
+
+        <h3 class="section-title2">Thông Tin</h3>
+
+        <div class="input-group">
+            <label>Họ tên</label>
+            <input type="text" id="checkoutName" placeholder="Nhập họ tên">
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>SĐT</label>
+                <input type="tel" id="checkoutPhone" placeholder="0123456789">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="checkoutEmail" placeholder="example@gmail.com">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Địa chỉ</label>
+            <textarea id="checkoutAddress" placeholder="Nhập địa chỉ"></textarea>
+        </div>
+
+        <!-- 🔥 chuyển phần thanh toán xuống đúng cột trái -->
+        <div class="payment-option">
+            <label>
+                <input type="radio" name="payment" value="cash" checked>
+                Tiền mặt
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="bank">
+                Chuyển khoản
+            </label>
+        </div>
+
+    </div>
+
+    <div class="checkout-right">
+
+        <span class="close-btn" id="closeBox">✖</span>
+
+        <h2 class="summary-title">🛒 Đơn Hàng</h2>
+
+        <div id="cartItems">
+            <div class="empty-cart">Chưa có mặt hàng nào</div>
+        </div>
+
+        <div class="total">
+            <span>Tổng</span>
+            <span id="totalPrice">0đ</span>
+        </div>
+
+        <button class="pay-btn" id="payBtn">Thanh Toán</button>
+
+    </div>
+
+</div>
+
+<!-- ================= BOX XÁC NHẬN ================= -->
+
+<div class="confirm-box" id="confirmBox">
+
+    <div class="confirm-content">
+
+        <h2 id="confirmTitle">
+            Xác nhận thanh toán?
+        </h2>
+
+        <p id="confirmText">
+            Bạn có muốn đặt đơn hàng không?
+        </p>
+
+        <div class="confirm-buttons" id="confirmButtons">
+
+            <button id="confirmYes">
+                Xác nhận
+            </button>
+
+            <button id="confirmNo">
+                Hủy
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<footer style="text-align:center; padding:20px; background:#000000; color:white; margin-top:40px;">
+    <p>© 2026 EPUer Aquatic</p>
+    <p>📍 Đại học Điện Lực (EPU), 235 Hoàng Quốc Việt, Hà Nội</p>
+    <p>📞 Hotline: 0123 456 789</p>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>

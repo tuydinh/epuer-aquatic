@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background: url("img1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden; 
+
+}
+
+header{
+    background:#18d6df;
+    padding:15px;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a{
+text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+color:white ;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+padding:8px 12px;
+border-radius:6px;
+transition:0.3s;
+}
+
+/* FORM GIỮ NGUYÊN */
+.container{
+    width: 600px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.92);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: flex; /* 🔥 CHIA 2 CỘT */
+    overflow: hidden;
+}
+/* BÊN TRÁI */
+.left-box{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo{
+    width: 150px;
+}
+
+/* BÊN PHẢI */
+.right-box{
+    width: 60%;
+    padding: 30px;
+}
+h2{
+    text-align:center;
+    color:#0097a7;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.form-group input{
+    width:100%;
+    padding:13px;
+    border:2px solid #ccc;
+    border-radius:10px;
+}
+
+.main-btn{
+    width:100%;
+    padding:14px;
+    background:#ff7a00;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.social-title{
+    text-align:center;
+    margin:18px 0 12px;
+    color:#666;
+    font-size:14px;
+}
+
+.social-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.social-item{
+    width:140px;
+    padding:12px;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.facebook{
+    background:#1877f2;
+}
+
+.google{
+    background:#db4437;
+}
+
+.social-item:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
+.switch{
+    text-align:center;
+    margin-top:18px;
+}
+
+.switch a{
+    color:#0097a7;
+    font-weight:bold;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.hidden{
+    display:none;
+}
+.error{
+    color:red;
+    font-size:13px;
+}
+
+.input-error{
+    border:2px solid red !important;
+}
+@media(max-width:768px){
+
+.container{
+    width:95%;
+    flex-direction:column;
+}
+
+.left-box,
+.right-box{
+    width:100%;
+}
+
+.left-box{
+    padding-top:20px;
+}
+
+.login-logo{
+    width:120px;
+}
+
+.social-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.social-item{
+    width:100%;
+}
+
+}

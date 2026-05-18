@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login/Register - EPUer Aquatic</title>
+<link rel="stylesheet" href="css/giaodiendangnhap.css">
+</head>
+<body>
+
+<header>
+    <nav>
+    <a href="index.html"> EPUer Aquatic</a>
+    </nav>
+</header>
+<div class="container">
+    <!-- BÊN TRÁI: LOGO -->
+    <div class="left-box">
+        <img src="ca/logo1.png" class="login-logo">
+    </div>
+
+    <!-- BÊN PHẢI: FORM -->
+    <div class="right-box">
+    <!-- LOGIN -->
+    <div id="loginForm">
+    <h2>Đăng Nhập</h2>
+
+    <div class="form-group">
+        <label>SĐT</label>
+        <input id="loginInput" type="text" placeholder="Số điện thoại">
+        <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+        <label>Mật khẩu</label>
+        <input id="loginPass" type="password" placeholder="Nhập mật khẩu">
+        <small class="error"></small>
+    </div>
+
+    <button class="main-btn" id="loginBtn">Đăng nhập</button>
+
+    <div class="social-title">Hoặc đăng nhập bằng</div>
+
+    <div class="social-box">
+        <div class="social-item facebook">Facebook</div>
+        <div class="social-item google">Google</div>
+    </div>
+
+    <div class="switch">
+        Chưa có tài khoản?
+        <a onclick="showRegister()">Đăng ký</a>
+    </div>
+</div>
+
+<!-- REGISTER -->
+<div id="registerForm" class="hidden">
+    <h2>Đăng Ký</h2>
+
+    <div class="form-group">
+        <label>Họ và tên</label>
+        <input id="regName" type="text" placeholder="Nhập họ tên">
+        <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+        <label>Số điện thoại</label>
+        <input id="regPhone" type="tel" placeholder="Nhập số điện thoại">
+        <small class="error"></small>
+    </div>
+
+    <div class="form-group">
+        <label>Mật khẩu</label>
+        <input id="regPass" type="password" placeholder="Tạo mật khẩu">
+        <small class="error"></small>
+    </div>
+
+    <button class="main-btn" id="registerBtn">Đăng ký</button>
+
+    <div class="social-title">Hoặc đăng ký bằng</div>
+
+    <div class="social-box">
+        <div class="social-item facebook">Facebook</div>
+        <div class="social-item google">Google</div>
+    </div>
+
+    <div class="switch">
+        Đã có tài khoản?
+        <a onclick="showLogin()">Đăng nhập</a>
+    </div>
+</div>
+
+</div>
+</div>
+<footer style="text-align:center; padding:20px; background:#000000; color:white; margin-top:40px;">
+    <p>© 2026 EPUer Aquatic</p>
+    <p>📍 Đại học Điện Lực (EPU), 235 Hoàng Quốc Việt, Hà Nội</p>
+    <p>📞 Hotline: 0123 456 789</p>
+</footer>
+<script src="js/giaodiendangnhap.js"></script>
+</body>
+</html>
